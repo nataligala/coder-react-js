@@ -1,13 +1,18 @@
 import "./NavBar.scss";
+import "../CartWidget/CartWidget"
+
 import { Navbar, Container, Nav } from "react-bootstrap";
+import CartWidget from "../CartWidget/CartWidget";
 
 export const NavBar = () => {
+
+    
   return (
     <header className="header">
         <Navbar expand="lg" className="navbar">
             <Container>
             <Navbar.Brand href="#home">
-                <a href=" " class="navbar-brand header__link">Flores Babel
+                <a href=" " class="navbar-brand header__link">Logo
                         <img src=" " class="header__img" alt=""/>
                 </a>
             </Navbar.Brand>
@@ -28,7 +33,11 @@ export const NavBar = () => {
                 </Nav>
             </Navbar.Collapse>
             </Container>
+
+            <CartWidget/>
         </Navbar>
+
+        
     </header>
 
   );
