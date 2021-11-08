@@ -1,14 +1,14 @@
-import './styles.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
 import { NavBar } from './components/NavBar/NavBar';
 
 function App() {
 
   return (
-    <div className="mi-app">
+    <div>
 
       <NavBar />
-
-      <h1>Mi Primer E-Commerce en React</h1>
+      <h1>Flores Babel</h1>
 
     </div>
   );
