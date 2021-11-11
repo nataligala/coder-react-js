@@ -1,0 +1,15 @@
+
+
+.homeView{
+    margin: 80px;
+}
+
+.homeView__title{
+    font-family: "Dancing Script", cursive;
+    color: rgba(98,118,95,1);
+    text-align: center;
+}
+
+.homeView__text{
+    text-align: center;
+}

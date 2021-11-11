@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.scss';
+import './App.css';
 
 import { NavBar } from './components/NavBar/NavBar';
 import { HomeView } from './components/HomeView/HomeView';

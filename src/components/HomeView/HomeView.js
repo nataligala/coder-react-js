@@ -1,5 +1,5 @@
 
-import "./HomeView.scss";
+import "./HomeView.css";
 
 export const HomeView = () => {
     return (

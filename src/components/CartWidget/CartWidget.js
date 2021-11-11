@@ -1,5 +1,5 @@
 import React from 'react';
-import "./CartWidget.scss";
+import "./CartWidget.css";
 import { BsFillCartPlusFill } from 'react-icons/bs';
 
 export default function CartWidget() {
