@@ -1,4 +1,4 @@
-import "./NavBar.scss";
+import "./NavBar.css";
 import "../CartWidget/CartWidget"
 
 import { Navbar, Container, Nav } from "react-bootstrap";

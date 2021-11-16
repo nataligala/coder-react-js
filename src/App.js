@@ -5,6 +5,8 @@ import { NavBar } from './components/NavBar/NavBar';
 import { HomeView } from './components/HomeView/HomeView';
 import { Footer } from './components/Footer/Footer';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
+import { ProductCard } from './components/ProductCard/ProductCard';
+import { ItemCount } from './components/ItemCount.js/ItemCount';
 
 
 function App() {
@@ -14,11 +16,11 @@ function App() {
 
       <NavBar />
       
-      <ItemListContainer greeting="Bienvenido a nuestra Tienda Online!!"/>
-
       <main>
         <HomeView />
 
+        
+        <ItemListContainer greeting="Bienvenido a nuestra Tienda Online!!"/>
 
       </main>
 

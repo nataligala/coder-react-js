@@ -13,3 +13,9 @@
 body{
     font-family: "PT Sans Narrow", sans-serif;
 }
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
