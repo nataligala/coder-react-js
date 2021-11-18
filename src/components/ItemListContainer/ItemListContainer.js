@@ -1,25 +1,36 @@
-import React from 'react'
-import { ItemCount } from '../ItemCount.js/ItemCount'
-import { ProductCard } from '../ProductCard/ProductCard'
-import img_plantas from "../../assets/img_plantas/sansevieria.jpg";
-import { Container } from 'react-bootstrap'
+import React, {useEffect, useState} from 'react'
+import { ItemList } from '../ItemList/ItemList';
+import { pedirDatos } from '../helpers/pedirDatos';
 
+export const ItemListContainer = () => {
 
+    const [loading, setLoading] = useState(false)
+    const [productos, setProductos] = useState([])
 
+    useEffect(() => {
+        
+        setLoading(true)
+        pedirDatos()
+        .then( (resp)  => {
+            setProductos(resp)
+        })
+        .catch( (error)  => {
+            console.log(error)
+        })
+        .finally( () => {
+            setLoading(false)
+        })
 
+    }, [])
 
-export const ItemListContainer = ( {greeting}) => {
 
     return (
-        <Container>
-            <h2>{greeting}</h2>
-            <hr/>  
-
-            <Container className="cards">
-                <ProductCard img={img_plantas} name="Sansevieria" />
-                <ProductCard img={img_plantas} name="Sansevieria" />
-                <ProductCard img={img_plantas} name="Sansevieria" />
-            </Container>  
-        </Container>
+        <>
+            {
+                loading
+                    ? <h2>Cargando...</h2>
+                    : <ItemList productos={productos}/>
+            }
+        </>    
     )
 }
