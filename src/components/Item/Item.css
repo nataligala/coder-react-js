@@ -1,0 +1,6 @@
+.products__img-container{
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 5px 1px #a8a8a8;
+    margin: 45px;
+}

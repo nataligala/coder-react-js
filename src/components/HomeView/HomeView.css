@@ -4,12 +4,26 @@
     margin: 80px;
 }
 
+.homeView__container{
+    line-height: 1.2;
+}
+
 .homeView__title{
     font-family: "Dancing Script", cursive;
     color: rgba(98,118,95,1);
+    font-size: 4em;
     text-align: center;
 }
 
+.homeView_logo{
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+}
+
 .homeView__text{
+    color: #a8a8a8;
+    font-size: 1.2em;
+    font-weight: lighter;
     text-align: center;
 }
