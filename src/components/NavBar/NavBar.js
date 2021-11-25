@@ -19,11 +19,11 @@ export const NavBar = () => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
-                  <Nav.Link href="/">Inicio</Nav.Link>
-                  <Nav.Link href="tienda/flores">Flores</Nav.Link>
-                  <Nav.Link href="tienda/plantas">Plantas</Nav.Link>
-                  <Nav.Link href="contacto">Contacto</Nav.Link>
+                <Nav>
+                  <Nav.Link><Link to="/" className="header__nav-link">Inicio</Link></Nav.Link>
+                  <Nav.Link><Link to="tienda/flores" className="header__nav-link">Flores</Link></Nav.Link>
+                  <Nav.Link><Link to="tienda/plantas" className="header__nav-link">Plantas</Link></Nav.Link>
+                  <Nav.Link><Link to="contacto" className="header__nav-link">Contacto</Link></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Container>

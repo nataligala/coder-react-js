@@ -1,5 +1,7 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import './Contact.css';
+import logoBanner from '../../../src/assets/img_banner/banner_contacto.jpg'
+import { Container, Form } from 'react-bootstrap';
 
 export const Contact = () => {
 
@@ -8,6 +10,10 @@ export const Contact = () => {
         <Container>
             <hr/> 
             <h2>Contacto</h2>
+            <Form>
+                <img src={logoBanner} alt="logo babel" className="form"/>
+            </Form>
+    
         </Container>
     )
 }

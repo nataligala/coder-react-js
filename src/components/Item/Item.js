@@ -1,5 +1,5 @@
 import React from 'react';
-// import { ItemCount } from '../ItemCount.js/ItemCount';
+import { Link } from 'react-router-dom';
 import './Item.css';
 
 export const Item = ({id, name, price, origin, img, alt, category}) => {
@@ -10,7 +10,7 @@ export const Item = ({id, name, price, origin, img, alt, category}) => {
             <div className="card-body">
                 <h3 className="card-title">{name}</h3>
                 <p className="card-text">{origin}</p>
-                <button className="btn btn-primary">Ver más</button>
+                <Link to={`/detail/${id}`} className="btn btn-primary">Ver más</Link>
             </div>   
         </article>
     )

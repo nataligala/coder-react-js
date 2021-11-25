@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-import { ItemCount } from '../ItemCount.js/ItemCount';
+import { ItemCount } from '../ItemCount/ItemCount';
 
 
 
@@ -25,8 +25,8 @@ export const ItemDetail = ({ id, name, price, img, description, category, stock 
             <p className="card-text">Precio: $ {price}</p>
             <ItemCount stock="5"/>
 
-            <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
-            <button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver</button>
+            <button className="btn btn-primary" onClick={handleVolver}>Volver a atrás</button>
+            <button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al Inicio</button>
         </div>
     )
 }

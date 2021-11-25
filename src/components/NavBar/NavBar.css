@@ -1,15 +1,18 @@
-
-header{
-    background-color: #FFFFFF;
-    position: sticky;
-    z-index: 3;
-    top: 0px;
+header {
+  background-color: #ffffff;
+  position: sticky;
+  z-index: 3;
+  top: 0px;
 }
 
-.header__img{
-    width: 50px;
-    height: 50px;
+.header__img {
+  width: 50px;
+  height: 50px;
 }
 
-
-
+.header__nav-link {
+  text-decoration: none;
+  color: #a8a8a8;
+  font-size: 18px;
+  font-weight: lighter;
+}

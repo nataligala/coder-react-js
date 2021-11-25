@@ -19,10 +19,9 @@ export const ItemDetailContainer = () => {
             .then( resp  => {
                 setItem ( resp.find ( prod => prod.id === Number(itemId))) 
             })
-
-        .finally( () => {
-            setLoading(false)
-        })
+            .finally( () => {
+                setLoading(false)
+            })
 
     }, [])
 
