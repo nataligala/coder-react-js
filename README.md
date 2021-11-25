@@ -1,7 +1,6 @@
 <h1 align="center">Hola 👋, Soy Natalí</h1>
-<p>Este es mi proyecto del curso de Desarrollo Web de Coder House:</p>
+<p>Este proyecto es la versión hecha en React del proyecto que hice en el curso de Desarrollo Web de Coder House:</p>
 <p> Una página dedicada a un negocio familiar de venta de flores y plantas "Flores Babel" 💐🌱</p>
-<h3 align="left">Tecnologías utilizadas en este proyecto</h3>
 
 <p align="left">
 <h3> Mi perfil de Linkedin</h3>
