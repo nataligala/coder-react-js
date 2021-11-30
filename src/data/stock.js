@@ -1,15 +1,15 @@
-import rosaRoja from "../../assets/img_flores/rosas-rojas2.JPG";
-import rosaBlanca from "../../assets/img_flores/lilium-blancas2.JPG";
-import rosaPink from "../../assets/img_flores/rosas-pink2.JPG";
-import liliumPink from "../../assets/img_flores/lilium-pink2.JPG";
-import liliumBlanca from "../../assets/img_flores/lilium-blancas2.JPG";
-import liliumGolden from "../../assets/img_flores/lilium-golden2.JPG";
-import sansieviera from "../../assets/img_plantas/sansevieria.jpg";
-import lirioDeLaPaz from "../../assets/img_plantas/spathiphyllum.jpg";
-import suculenta from "../../assets/img_plantas/plantasuculentas.jpg";
-import potus from "../../assets/img_plantas/plantapotus.jpg";
-import dieffenbachia from "../../assets/img_plantas/dieffenbachia.jpg";
-import orquidea from "../../assets/img_plantas/plantaorquideas.jpg";
+import rosaRoja from "../assets/img_flores/rosas-rojas2.JPG";
+import rosaBlanca from "../assets/img_flores/lilium-blancas2.JPG";
+import rosaPink from "../assets/img_flores/rosas-pink2.JPG";
+import liliumPink from "../assets/img_flores/lilium-pink2.JPG";
+import liliumBlanca from "../assets/img_flores/lilium-blancas2.JPG";
+import liliumGolden from "../assets/img_flores/lilium-golden2.JPG";
+import sansieviera from "../assets/img_plantas/sansevieria.jpg";
+import lirioDeLaPaz from "../assets/img_plantas/spathiphyllum.jpg";
+import suculenta from "../assets/img_plantas/plantasuculentas.jpg";
+import potus from "../assets/img_plantas/plantapotus.jpg";
+import dieffenbachia from "../assets/img_plantas/dieffenbachia.jpg";
+import orquidea from "../assets/img_plantas/plantaorquideas.jpg";
 
 export const stock = [
     {
@@ -19,7 +19,8 @@ export const stock = [
         origin: "Importadas de Ecuador.",
         img: rosaRoja,
         alt: "Ramo de Rosas Rojas",
-        category: 'flores'
+        category: 'flores',
+        stock: 5
 
     },
     {
@@ -29,7 +30,8 @@ export const stock = [
         origin: "Importadas de Ecuador.",
         img: rosaBlanca,
         alt: "Ramo de Rosas Blancas",
-        category: 'flores'
+        category: 'flores',
+        stock: 5
     },
     {
         id: 3,
@@ -38,7 +40,8 @@ export const stock = [
         origin: "Importadas de Ecuador.",
         img: rosaPink,
         alt: "Ramo de Rosas Pink",
-        category: 'flores'
+        category: 'flores',
+        stock: 5
     },
     {
         id: 4,
@@ -47,7 +50,8 @@ export const stock = [
         origin: "Origen Argentina",
         img: liliumPink,
         alt: "Ramo de Lilium Pink",
-        category: 'flores'
+        category: 'flores',
+        stock: 5
     },
     {
         id: 5,
@@ -56,7 +60,8 @@ export const stock = [
         origin: "Origen Argentina",
         img: liliumBlanca,
         alt: "Ramo de Lilium Blanca",
-        category: 'flores'
+        category: 'flores',
+        stock: 5
     },
     {
         id: 6,
@@ -65,7 +70,8 @@ export const stock = [
         origin: "Origen Argentina",
         img: liliumGolden,
         alt: "Ramo de Lilium Golden",
-        category: 'flores'
+        category: 'flores',
+        stock: 5
     },
     {
         id: 7,
@@ -74,7 +80,8 @@ export const stock = [
         origin: null,
         img: sansieviera,
         alt: "Planta Sansevieria",
-        category: 'plantas'
+        category: 'plantas',
+        stock: 5
     },
     {
         id: 8,
@@ -83,7 +90,8 @@ export const stock = [
         origin: null,
         img: lirioDeLaPaz,
         alt: "Planta Lirio de la Paz",
-        category: 'plantas'
+        category: 'plantas',
+        stock: 5
     },
     {
         id: 9,
@@ -92,7 +100,8 @@ export const stock = [
         origin: null,
         img: suculenta,
         alt: "Planta Suculenta",
-        category: 'plantas'
+        category: 'plantas',
+        stock: 5
     },
     {
         id: 10,
@@ -101,7 +110,8 @@ export const stock = [
         origin: null,
         img: potus,
         alt: "Planta Potus",
-        category: 'plantas'
+        category: 'plantas',
+        stock: 5
     },
     {
         id: 11,
@@ -110,7 +120,8 @@ export const stock = [
         origin: null,
         img: dieffenbachia,
         alt: "Planta Dieffenbachia",
-        category: 'plantas'
+        category: 'plantas',
+        stock: 5
     },
     {
         id: 12,
@@ -119,6 +130,7 @@ export const stock = [
         origin: null,
         img: orquidea,
         alt: "Planta Orquidea",
-        category: 'plantas'
+        category: 'plantas',
+        stock: 5
     }
 ]
