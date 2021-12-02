@@ -8,24 +8,27 @@ import { NavBar } from './components/NavBar/NavBar';
 import { BrowserRouter } from 'react-router-dom';
 import { Footer } from './components/Footer/Footer';
 import { AppRouter } from './components/router/AppRouter';
-
+import { CartProvider } from './context/CartContext';
 
 
 function App() {
 
+
   return (
-    <BrowserRouter>
-      
-      <NavBar />
-      
-      {/* <HomeView /> */}
-      
-      <AppRouter />
 
-      <Footer/>
+    <CartProvider>
+      <BrowserRouter>
+        
+        <NavBar />
+        
+        {/* <HomeView /> */}
+        
+        <AppRouter />
 
-    </BrowserRouter>
+        <Footer/>
 
+      </BrowserRouter>
+    </CartProvider>
 
   );
 }

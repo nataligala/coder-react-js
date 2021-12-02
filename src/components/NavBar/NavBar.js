@@ -1,11 +1,10 @@
 import React from "react";
 import "./NavBar.css";
-import "../CartWidget/CartWidget"
 import logoBabel from "../../assets/img_navbar/logo-babel.png";
 
 import { Link } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import CartWidget from "../CartWidget/CartWidget";
+import { CartWidget } from "../CartWidget/CartWidget";
 
 export const NavBar = () => {
 

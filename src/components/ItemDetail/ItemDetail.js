@@ -1,18 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom'
+import { CartContext } from '../../context/CartContext';
 import { ItemCount } from '../ItemCount/ItemCount';
 
 
 
 export const ItemDetail = ({ id, name, price, img, description, stock }) => {
 
+    const {addToCart, isInCart } = useContext(CartContext)
+
 
     const navigation = useNavigate()
 
     const [counter, setCounter] = useState(1);
 
-    const [agregado, setAgregado] = useState(false);
 
     const handleVolver = () => {
         navigation(-1)
@@ -21,24 +23,20 @@ export const ItemDetail = ({ id, name, price, img, description, stock }) => {
     const handleVolverInicio = () => {
         navigation('/')
     }
-
     
 
     const handleAgregar = () =>{
 
         if (counter > 0){
 
-            console.log('Item agregado: ', {
+            addToCart({
                 id,
                 name,
                 price,
+                img,
                 counter
             })
-    
-            setAgregado(true)
-
         }
-
 
     }
 
@@ -50,7 +48,7 @@ export const ItemDetail = ({ id, name, price, img, description, stock }) => {
             <p className="card-text">Precio: $ {price}</p>
             
             {
-                !agregado
+                !isInCart(id)
                 ?  <ItemCount 
                         stock={stock} 
                         counter={counter} 
@@ -63,8 +61,8 @@ export const ItemDetail = ({ id, name, price, img, description, stock }) => {
 
 
 
-            <button className="btn btn-primary" onClick={handleVolver}>Volver a atrás</button>
-            <button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al Inicio</button>
+            <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
+            <button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al inicio</button>
         </div>
     )
 }
