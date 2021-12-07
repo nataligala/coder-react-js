@@ -1,5 +1,12 @@
-.cartWidget{
+.cartWidget, .cant{
     font-size: 2rem;
-    margin-right: 20px;
+    margin-right: 5px;
     color: rgba(98,118,95,1);
 }
+
+.hidden{
+    visibility: hidden;
+    pointer-events: none;
+}
+
+

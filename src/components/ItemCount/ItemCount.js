@@ -16,16 +16,26 @@ export const ItemCount = ({stock, setCounter, counter, onAdd}) => {
     return (
         <div>
             <div className="my-3">
-                <Button variant="success" onClick={decrementar}>
+                <Button 
+                    variant="success" 
+                    disabled={counter === 0}
+                    onClick={decrementar}
+                >
                     -
                 </Button>
                 <span className="mx-2">{counter}</span>
 
-                <Button variant="success my-2" onClick={incrementar}>
+                <Button 
+                    variant="success my-2" 
+                    onClick={incrementar}
+                >
                     +
                 </Button>
             </div>
-            <Button variant="success my-2" onClick={onAdd}>
+            <Button 
+                variant="success my-2" 
+                disabled={counter === 0}
+                onClick={onAdd}>
                 Agregar al Carrito
             </Button>
         </div>
