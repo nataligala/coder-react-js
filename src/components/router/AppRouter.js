@@ -5,6 +5,7 @@ import { ItemDetailContainer } from '../ItemDetailContainer/ItemDetailContainer'
 import { ItemListContainer } from '../ItemListContainer/ItemListContainer'
 import { Contact } from '../Contact/Contact'
 import { HomeView } from '../HomeView/HomeView'
+import { Checkout } from '../Checkout/Checkout'
 
 export const AppRouter = () => {
 
@@ -15,6 +16,7 @@ export const AppRouter = () => {
         { path: "/contacto", element: <Contact/> },
 
         { path: "/cart", element: <CartView/> },
+        { path: "/checkout", element: <Checkout/> },
         
         { path: "*", element: <Navigate to="/"/> }
     ])
