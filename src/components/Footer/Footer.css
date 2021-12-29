@@ -1,6 +1,14 @@
 .footer__container{
     background-color: rgba(154,194,160,1);
     height: 100px;
+    padding-top: 20px;
     display: flex;
+    justify-content: space-between;
     
+}
+
+.footer__text{
+    font-size: 1.2em;
+    color: white;
+    margin-left: 20px;
 }

@@ -69,16 +69,3 @@ export const Contact = () => {
         </Container>
     )
 }
-
-
-/*    const [name, setName] = useState('')
-    const [lastname, setLastname] = useState('')
-
-
-    const handleName = (e) => {
-        setName(e.target.value)
-    }
-
-    const handleLastname = (e) => {
-        setLastname(e.target.value)
-    } */

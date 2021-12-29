@@ -35,14 +35,3 @@ function App() {
 }
 
 export default App;
-
-/* <Routes>
-  <Route path="/" element={ <ItemListContainer/> }/>
-  <Route path="/tienda/:categoryId" element={ <ItemListContainer/> }/>
-  <Route path="/detail/:itemId" element={ <ItemDetailContainer/> } />
-  <Route path="/contacto" element={ <Contact/> } />
-
-  <Route path="/cart" element={ <CartView/> }/>
-
-  <Route path="*" element={ <Navigate to="/" />  } />
-</Routes> */

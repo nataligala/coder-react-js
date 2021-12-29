@@ -3,12 +3,11 @@ import { Container, Button, Form } from 'react-bootstrap'
 import { Navigate } from 'react-router'
 import { validarDatos } from '../../helpers/validarDatos'
 import { CartContext } from '../../context/CartContext'
-import { db } from '../../firebase/config'
-import { addDoc, collection, Timestamp } from 'firebase/firestore/lite'
+import { generarOrden } from '../../firebase/generarOrden'
 
 export const Checkout = () => {
 
-    const {cart, totalCompra} = useContext(CartContext)
+    const {cart, emptyCart, totalCompra} = useContext(CartContext)
 
     const [values, setValues] = useState({
         nombre: '',
@@ -17,7 +16,7 @@ export const Checkout = () => {
     })
     
 
-    const handleInputChange = (e) =>{
+    const handleInputChange = (e) => {
 
         setValues({
             ...values,
@@ -27,27 +26,9 @@ export const Checkout = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-
         if(!validarDatos(values)) { return }
         
-
-        const orden = {
-            buyer: {...values},
-            items: cart,
-            total: totalCompra(),
-            date: Timestamp.fromDate ( new Date())
-    
-        }
-
-        const orderRef = collection(db, "orders")
-
-        addDoc(orderRef, orden)
-            .then((res) => {
-                console.log(res.id)
-            })
-
-        console.log(orden)
-
+        generarOrden(values, cart, emptyCart, totalCompra)
     }
 
 
@@ -55,7 +36,7 @@ export const Checkout = () => {
     return (
 
         <>
-            {cart.lenght === 0 
+            {cart.length === 0 
                 ? <Navigate to="/"/>
                 :
                     <Container>
